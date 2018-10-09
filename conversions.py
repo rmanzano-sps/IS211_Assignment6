@@ -1,11 +1,15 @@
 import numpy
 
 def convertCelsiusToKelvin(celsius):
-    notice = 'Hi from convertCelsiusToKelvin'
-    print(notice)
-    return 0.0
+    kelvin = celsius + 273.15
+    print kelvin
+    return kelvin
 
 def convertCelsiusToFahrenheit(celsius):
-    notice = 'Hi from convertCelsiusToFahrenheit'
-    frank = -459.67
-    return frank
+    return
+
+def main():
+    convertCelsiusToKelvin(500.00)
+
+if __name__ == '__main__':
+    main()

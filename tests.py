@@ -26,15 +26,14 @@ class TemperatireConversionTest(unittest.TestCase):
 
     def test_convertCelsiusToKelvin(self):
         for temp in self.temperature_comparison:
+            print(temp[0])
             result = convertCelsiusToKelvin(temp[0])
-            print(temp[1], 'here')
-            self.assertEqual(temp[1], result)
+            self.assertEqual(temp[1], result, 'This is an error')
 
     def test_convertCelsiusToFahrenheit(self):
         for temp in self.temperature_comparison:
             result = convertCelsiusToFahrenheit(temp[0])
-            print(temp[1], 'here')
-            self.assertEqual(temp[1], result)
+            self.assertEqual(temp[2], result)
 
 
 if __name__ == '__main__':
